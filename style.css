@@ -79,7 +79,93 @@
     height: 500px;
     background-image:url("images/main-camera.png"), url(images/Circle\ design.svg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 
+}
+.company-logo{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    box-shadow: 2px 2px 5px ;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.company-logo img{
+    padding: 20px;
+}
+
+/* Collection Part */
+.collection-container{
+    border: 2px solid red;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.box{
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid green;
     
 }
+.box img{
+    width: 95%;
+    height: 60%;
+   
+    
+
+}
+
+
+
+
+@media screen and (max-width:576px){
+    .nav-container{
+        flex-direction: column;
+
+    }
+    .bannar-container{
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+    .bannar-text{
+        width: 90%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .bannar-image{
+        width: 90%;
+        background-size: 100%;
+    }
+    
+    .company-logo{
+        width: 70%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .company-logo img{
+        width: 55px;
+        padding: 10px;
+    }
+
+    .collection-container{
+        
+        grid-template-columns: 1fr;
+
+
+
+
+
+        
+}
+
+
+
+
+
+    
+    
+    
+
